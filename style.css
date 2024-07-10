@@ -1,0 +1,239 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Comfortaa", sans-serif;
+    /* font-weight: 1000; */
+}
+#container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 90px;
+    position: relative;
+}
+.logo{
+    width: 125px;
+}
+.list-items{
+    list-style: none;
+    display: inline;
+    margin: 0px 40px;
+}
+.links{
+    text-decoration: none;
+    color: black;
+    font-weight: 1000;
+}
+.links:hover{
+    text-decoration: underline;
+    color: brown;
+}
+.home-content{
+    margin: 15% 0px 0px 8%;
+}
+#username{
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+#lname{
+    color: coral;
+    font-family: "Comfortaa", sans-serif;
+}
+#user-details{
+    line-height: 2;
+}
+#download{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    display: inline-block;
+    margin-top: 10px;
+
+}
+.home-img{
+    width: 45%;
+    height:75%;
+    position: absolute;
+    right: 20px;
+    bottom: 0px;
+}
+.group1{
+    position: absolute;
+    height: 100%;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: bottom 2s, left 1s;  /* makes transition smoother */
+
+}
+.home-img:hover #girl{
+    left: 40%;
+}
+.home-img:hover #shape{
+    bottom: 70px;
+}
+#about{
+    margin: 15% 8% 0px 8% ;
+}
+.section-head{
+    text-align: center;
+}
+.main-head{
+    font-size: 30px;
+}
+.sub-head{
+    font-size: 15px;
+    color: brown;
+}
+.about-body{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    align-items: center;
+    margin-top: 20px;
+}
+.about-img>img{
+    width: 80%;
+}
+.about-content{
+    text-align: justify;
+    font-size: 18px;
+}
+.information{
+    margin-top: 1.2rem;
+}
+.info-box{
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+.info-box>span{
+    margin-left: 1rem;
+}
+#skill{
+    margin: 8% 8% 0px 8%;
+}
+.skill-contents{
+display: grid;
+grid-template-columns: repeat(2,1fr);
+gap: 50px;
+align-items: center;
+margin-top: 20px;
+}
+.mySkills{
+    width: 90%;
+}
+.bars{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 1rem 0px;
+}
+.bar-head,.bar-percent{
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+.base-bar{
+    width: 100%;
+    height: 0.5rem;
+    position: absolute;
+    background-color: black;
+    bottom: 0px;
+    border-radius: 10px;
+}
+.html-bar{
+    background-color: chocolate;
+    width: 91%;
+}
+.css-bar{
+    background-color: chocolate;
+    width: 87%;
+}
+.js-bar{
+    background-color: chocolate;
+    width: 80%;
+}
+.react-bar{
+    background-color: chocolate;
+    width: 95%;
+}
+#contact{
+    margin: 8%;
+}
+.icon-collection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4%;
+}
+.icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    /* border: solid; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 10px;
+}
+.icon:hover {
+    background-image: linear-gradient(to bottom right,white,yellow,chocolate,red);
+}
+.brands{
+    color: black;
+    font-size: 30px;
+}
+.icon:hover .brands{
+    color: white;
+    animation: rotate 3s;
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(30deg);
+    }
+    20%{
+        transform: rotate(-30deg);
+    }
+    40%{
+        transform: rotate(30deg);
+    }
+    60%{
+        transform: rotate(-30deg);
+    }
+    80%{
+        transform: rotate(30deg);
+    }
+    100%{
+        transform: rotate(-30deg);
+    }
+}
+#copyright{
+    text-align: center;
+    font-weight: 900;
+}
+.up-arrow{
+    float: right;
+    margin: -40px 30px 30px 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: azure;
+}
+::-webkit-scrollbar-thumb{
+background-color: chocolate;
+border-radius: 10px;
+}
